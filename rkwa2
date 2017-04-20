@@ -17,7 +17,7 @@ int *tablica(int r)
 
 int main()
     {
-    int *a, t, i;
+    int *a, t, i;fthygggggggggggggggggggggtjyukgyuk
 
     printf("podaj dl. tablicy   ");
     scanf("%i", &t);
