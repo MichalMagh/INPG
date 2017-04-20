@@ -731,7 +731,7 @@ void copy_to_file(FILE* inout, tree** t)                                    /*za
 
     }
 
-int main(int argc, char** argv)
+int main(int argc, char** argv)// edit inpg
     {
     number_of_entries=0;
     FILE* inout;
@@ -741,7 +741,7 @@ int main(int argc, char** argv)
 
     while(menu(&t,&h));
 
-    inout=fopen(argv[1],"w");
+    inout=fopen(argv[1],"w");// inpg
     if(inout!=NULL)
         fclose(inout);
 
