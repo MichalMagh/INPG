@@ -35,6 +35,7 @@ int funkcja(float a, float b, float c, double *x, double *y)
     return liczbamiejsc;
     }
 
+//asdfghjsdfghjkrtyhhytjutphkiojyu
 int main()
     {
     int liczba;
@@ -47,7 +48,7 @@ int main()
     scanf("%f",&c);
 
     liczba=funkcja(a, b, c, &x, &y);
-
+//ghdfrghdgdfgstgedrsgrdeg
     switch(liczba)
         {
         case -3:
@@ -68,7 +69,7 @@ int main()
             printf("Liczba miejsc zerowych:%i\n%f\n%f", liczba, x, y);
             break;
         }
-    //makefile
+
     return 0;
     }
 
