@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h> //wdesrgfdhyjgvhyjuyg
 #include<math.h>
 
 int funkcja(float a, float b, float c, double *x, double *y)
