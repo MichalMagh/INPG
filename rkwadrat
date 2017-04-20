@@ -68,7 +68,7 @@ int main()
             printf("Liczba miejsc zerowych:%i\n%f\n%f", liczba, x, y);
             break;
         }
-
+    //makefile
     return 0;
     }
 
