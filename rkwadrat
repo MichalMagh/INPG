@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<math.h>
+
+int funkcja(float a, float b, float c, double *x, double *y)
+    {
+    double pd;
+    int liczbamiejsc;
+    float d;
+
+
+    d=((b*b)-(4*a*c));
+
+    if(d>0 && a!=0)
+        {
+        pd=sqrt(d);
+        liczbamiejsc=2;
+        *x=((-b+pd)/(2*a));
+        *y=((-b-pd)/(2*a));
+        }
+    if(d==0 && a!=0)
+        {
+        liczbamiejsc=1;
+        *x=((-b)/(2*a));
+        }
+    if(d<0)
+        liczbamiejsc=0;
+    if(a==0 && b!=0 && c!=0)
+        liczbamiejsc=-1;
+        *x=(-c)/b;
+    if(a==0 && b==0 && c!=0)
+        liczbamiejsc=-2;
+    if(a==0 && b==0 && c==0)
+        liczbamiejsc=-3;
+
+    return liczbamiejsc;
+    }
+
+int main()
+    {
+    int liczba;
+    double x, y;
+    float a, b, c;
+    printf("Wprowadz wspolczynniki a,b,c\n");
+
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c);
+
+    liczba=funkcja(a, b, c, &x, &y);
+
+    switch(liczba)
+        {
+        case -3:
+            printf("Rownie tozsamosciowe");
+        case -2:
+            printf("Rownanie sprzeczne!");
+            break;
+        case -1:
+            printf("Rownanie jest liniowe. Miejsce zerowe jest rowne:%f", x);
+            break;
+        case 0:
+            printf("Liczba miejsc zerowych:%i", liczba);
+            break;
+        case 1:
+            printf("Liczba miejsc zerowych:%i\n%f", liczba, x);
+            break;
+        case 2:
+            printf("Liczba miejsc zerowych:%i\n%f\n%f", liczba, x, y);
+            break;
+        }
+
+    return 0;
+    }
+
