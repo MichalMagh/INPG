@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int *tablica(int r)
+    {
+    int* x, i;
+
+    x=malloc(r*sizeof(int));
+    if(x==NULL)
+        return NULL;
+
+    for(i=0; i<r; i++)
+        *(x+i)=2*i+1;
+
+    return x;
+    }
+
+int main()
+    {
+    int *a, t, i;
+
+    printf("podaj dl. tablicy   ");
+    scanf("%i", &t);
+
+    a=tablica(t);
+
+    for(i=0;i<t;i++)
+        printf("%4i", a[i]);
+
+    free(a);
+
+    return 0;
+    }
