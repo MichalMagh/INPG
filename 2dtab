@@ -14,7 +14,7 @@ void deleteMatrix(int*** ptab, int n )
     free(*ptab);
     *ptab=NULL;
 
-    return;
+    return;drtgdrghdcrfhtfghcdfgdgrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrhrdgh
     }
 
 int** createMatrix(int n)
