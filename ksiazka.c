@@ -4,7 +4,7 @@
 #define R 14
 #define P 12
 #define N 10
-
+eststety
 int number_of_entries;
 
 typedef struct tree tree;
